@@ -11,7 +11,6 @@ use Drupal\Core\Layout\LayoutDefault;
  */
 class XyGridLayouts extends LayoutDefault implements PluginFormInterface {
 
-
   /**
    * {@inheritdoc}
    */

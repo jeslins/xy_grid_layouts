@@ -1,8 +1,6 @@
 {#
 #}
-<div class="grid-container">
-    <div {{ attributes.setAttribute('id', settings.wrapper_id).addClass('grid-x', settings.wrapper_classes) }}>
-        {% block grid %}
-        {% endblock %}
-    </div>
+<div {{ attributes.setAttribute('id', settings.wrapper_id).addClass('grid-x', settings.wrapper_classes) }}>
+    {% block grid %}
+    {% endblock %}
 </div>

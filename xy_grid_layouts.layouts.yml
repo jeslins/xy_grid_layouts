@@ -157,6 +157,21 @@ xy-grid-9-3:
       label: 'Sidebar Left'
     sidebar_right:
       label: 'Sidebar Right'
+xy-grid-9-3-stacked:
+  label: 'XY Grid Two Column: 9-3 Stacked'
+  category: 'XY Grid Layouts'
+  template: 'templates/xy-grid-9-3-stacked'
+  class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
+  icon: 'images/9-3-stacked.png'
+  regions:
+    top:
+      label: 'Top'
+    sidebar_left:
+      label: 'Sidebar Left'
+    sidebar_right:
+      label: 'Sidebar Right'
+    bottom:
+      label: 'Bottom'
 xy-grid-10-2:
   label: 'XY Grid Two Column: 10-2'
   category: 'XY Grid Layouts'

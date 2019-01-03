@@ -2,12 +2,12 @@
 
 {% block grid %}
     {% if content.sidebar_left %}
-        <{{ settings.wrappers.sidebar_left }} class="coll medium-6">
+        <{{ settings.wrappers.sidebar_left }} class="coll {{settings.breakpoint}}-6">
             {{ content.sidebar_left }}
         </{{ settings.wrappers.sidebar_left }}>
     {% endif %}
     {% if content.sidebar_right %}
-        <{{ settings.wrappers.sidebar_right }} class="coll medium-6">
+        <{{ settings.wrappers.sidebar_right }} class="coll {{settings.breakpoint}}-6">
             {{ content.sidebar_right }}
         </{{ settings.wrappers.sidebar_right }}>
     {% endif %}

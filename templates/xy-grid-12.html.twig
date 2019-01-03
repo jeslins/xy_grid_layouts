@@ -2,7 +2,7 @@
 
 {% block grid %}
     {% if content.main %}
-        <{{ settings.wrappers.main }} class="cell medium-12">
+        <{{ settings.wrappers.main }} class="cell {{settings.breakpoint}}-12">
         {{ content.main }}
         </{{ settings.wrappers.main }}>
     {% endif %}

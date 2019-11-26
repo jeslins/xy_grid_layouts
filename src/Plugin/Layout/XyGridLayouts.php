@@ -107,10 +107,11 @@ class XyGridLayouts extends LayoutDefault implements PluginFormInterface, Contai
       '#description' => $this->t('Attributes for grid container'),
       '#tree' => TRUE,
     ];
+    $grid_container_type = isset($configuration['grid_container']['type']) ? $configuration['grid_container']['type'] : '';
     $form['grid_container']['type'] = [
       '#type' => 'select',
       '#title' => $this->t('Type'),
-      '#default_value' => $configuration['grid_container']['type'],
+      '#default_value' => $grid_container_type,
       '#empty_option' => $this->t('Default'),
       '#empty_value' => '',
       '#options' => [
@@ -118,18 +119,20 @@ class XyGridLayouts extends LayoutDefault implements PluginFormInterface, Contai
         'full' => $this->t('Full'),
       ],
     ];
+    $grid_container_classes = isset($configuration['grid_container']['classes']) ? $configuration['grid_container']['classes'] : '';
     $form['grid_container']['classes'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Classes'),
       '#description' => $this->t('Add additional classes to the grid container element.'),
-      '#default_value' => $configuration['grid_container']['classes'],
+      '#default_value' => $grid_container_classes,
       '#weight' => 1,
     ];
+    $grid_container_id = isset($configuration['grid_container']['id']) ? $configuration['grid_container']['id'] : '';
     $form['grid_container']['id'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Id'),
       '#description' => $this->t('Add an Id to the grid container element.'),
-      '#default_value' => $configuration['grid_container']['id'],
+      '#default_value' => $grid_container_id,
       '#weight' => 1,
     ];
 
@@ -149,17 +152,19 @@ class XyGridLayouts extends LayoutDefault implements PluginFormInterface, Contai
         'grid-y' => $this->t('Grid Y'),
       ],
     ];
+    $classes = isset($configuration['grid']['classes']) ? $configuration['grid']['classes'] : '';
     $form['grid']['classes'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Classes'),
       '#description' => $this->t('Add additional classes to the grid element.'),
-      '#default_value' => $configuration['grid']['classes'],
+      '#default_value' => $classes,
     ];
+    $id = isset($configuration['grid']['id']) ? $configuration['grid']['id'] : '';
     $form['grid']['id'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Id'),
       '#description' => $this->t('Add an Id to the grid element.'),
-      '#default_value' => $configuration['grid']['id'],
+      '#default_value' => $id,
     ];
 
     // Add wrappers.

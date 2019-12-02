@@ -1,9 +1,15 @@
 {#
 #}
+{% if settings.grid_container.id %}
+	{% set attributes = attributes.setAttribute('id', settings.grid_container.id) %}
+{% endif %}
 {% set grid_attributes = create_attribute() %}
-<div {{ attributes.setAttribute('id', settings.grid_container.id).addClass('grid-container', settings.grid_container.type, settings.grid_container.classes) }}>
-    <div {{ grid_attributes.setAttribute('id', settings.grid.id).addClass(settings.grid.type, settings.grid.classes) }}>
-        {% block grid %}
-        {% endblock %}
-    </div>
+{% if settings.grid.id %}
+	{% set grid_attributes = grid_attributes.setAttribute('id', settings.grid.id) %}
+{% endif %}
+<div {{ attributes.addClass('grid-container', settings.grid_container.type, settings.grid_container.classes) }}>
+	<div {{ grid_attributes.addClass(settings.grid.type, settings.grid.classes) }}>
+		{% block grid %}
+		{% endblock %}
+	</div>
 </div>

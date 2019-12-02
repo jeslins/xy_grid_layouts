@@ -89,7 +89,8 @@ class XyGridLayouts extends LayoutDefault implements PluginFormInterface, Contai
       $breakpoints_labels = [];
       foreach ($breakpoints as $breakpoint) {
         $breakpoint_label = (string) $breakpoint->getLabel();
-        $breakpoints_labels[$breakpoint_label] = $breakpoint_label;
+        list(, $breakpoint_machine_name) = explode('.', $breakpoint->getPluginId());
+        $breakpoints_labels[$breakpoint_machine_name] = $breakpoint_label;
       }
       $form['breakpoint'] = [
         '#type' => 'select',

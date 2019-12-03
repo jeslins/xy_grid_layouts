@@ -1,3 +1,14 @@
+ Journal 8.x-2.x-beta1, 2019-12-02
+----------------------------------
+#3098118 by itothegore: Don't use Label from Breakpoint
+#3098096 by itothegore: Using $this when not in object context
+#3097206 by maskedjellybean: Empty ID attributes
+#3096741 by maskedjellybean: Undefined index errors when creating new section in Layout Builder
+
+ Journal 8.x-2.x-beta1, 2019-11-21
+----------------------------------
+#3027315 by itothegore: Restricted flexibility for layouts with stacked / bricks layouts
+
  Journal 8.x-1.x-beta4, 2019-01-18
 ----------------------------------
 #3025095 by jidrone, itothegore: Support layout builder draggable

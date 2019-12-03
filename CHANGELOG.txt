@@ -1,5 +1,6 @@
  Journal 8.x-2.x-beta1, 2019-12-02
 ----------------------------------
+#3096927 by maskedjellybean, itothegore: Form field to set grid gutters
 #3098118 by itothegore: Don't use Label from Breakpoint
 #3098096 by itothegore: Using $this when not in object context
 #3097206 by maskedjellybean: Empty ID attributes

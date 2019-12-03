@@ -153,6 +153,28 @@ class XyGridLayouts extends LayoutDefault implements PluginFormInterface, Contai
         'grid-y' => $this->t('Grid Y'),
       ],
     ];
+    $grid_gutters_x = isset($configuration['grid']['gutters_x']) ? $configuration['grid']['gutters_x'] : 'None';
+    $form['grid']['gutters_x'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Gutters X'),
+      '#default_value' => $grid_gutters_x,
+      '#empty_option' => $this->t('None'),
+      '#options' => [
+        'grid-margin-x' => $this->t('Margins'),
+        'grid-padding-x' => $this->t('Padding'),
+      ],
+    ];
+    $grid_gutters_y = isset($configuration['grid']['gutters_y']) ? $configuration['grid']['gutters_y'] : 'None';
+    $form['grid']['gutters_y'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Gutters Y'),
+      '#default_value' => $grid_gutters_y,
+      '#empty_option' => $this->t('None'),
+      '#options' => [
+        'grid-margin-y' => $this->t('Margins'),
+        'grid-padding-y' => $this->t('Padding'),
+      ],
+    ];
     $classes = isset($configuration['grid']['classes']) ? $configuration['grid']['classes'] : '';
     $form['grid']['classes'] = [
       '#type' => 'textfield',

@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Template\Attribute;
 
 /**
  * Implements hook_help().
@@ -21,4 +22,48 @@ function xy_grid_layouts_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function xy_grid_layouts_theme() {
+  return [
+    // On behalf of a plugin
+    'views_ui_style_plugin_column_table' => [
+      'render element' => 'form',
+      'file' => 'xy_grid_layouts.theme.inc',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for views grid style templates.
+ *
+ * Default template: views-view-grid.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - view: The view object.
+ *   - rows: An array of row items. Each row is an array of content.
+ */
+function template_preprocess_views_view_block_grid(&$variables) {
+
+  // debug($variables);
+  $options = $variables['options'] = $variables['view']->style_plugin->options;
+
+  $items = [];
+
+  // Iterate over each rendered views result row.
+  foreach ($variables['rows'] as $result_index => $item) {
+
+    // Add the item.
+    $items[$result_index]['content'] = $item;
+    $items[$result_index]['attributes'] = new Attribute();
+  }
+
+  // Add items to the variables array.
+  $variables['items'] = $items;
+
+  $variables['attributes'] = new Attribute();
 }

@@ -1,0 +1,54 @@
+{#
+/**
+ * @file
+ * Default theme implementation for views to display rows in a grid.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapping element.
+ * - title: The title of this group of rows.
+ * - view: The view object.
+ * - rows: The rendered view results.
+ * - options: The view plugin style options.
+ *   - grid_class_default: A flag indicating whether default classes should be
+ *     used on rows.
+ *   - cell_class_default: A flag indicating whether default classes should be
+ *     used on columns.
+ * - items: A list of grid items.
+ *   - attributes: HTML attributes for each row or column.
+ *   - content: A list of columns or rows. Each row or column contains:
+ *
+ * @see template_preprocess_views_view_block_grid()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set grid_classes = [
+    'grid-x',
+    options.columns.small_up != '' ? 'small-up-' ~ options.columns.small_up,
+    'medium-up-' ~ options.columns.medium_up,
+    'large-up-' ~ options.columns.large_up,
+    options.columns.xlarge_up != '' ? 'xlarge-up-' ~ options.columns.xlarge_up,
+    options.columns.xxlarge_up != '' ? 'xxlarge-up-' ~ options.columns.xxlarge_up,
+    options.grid_class_default|clean_class,
+  ]
+%}
+
+{%
+  set cell_classes = [
+    'cell',
+    options.cell_class_default|clean_class,
+
+  ]
+%}
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div{{ attributes.addClass(grid_classes) }}>
+  {% for cell in items %}
+    <div{{ cell.attributes.addClass(cell_classes) }}>
+      {{- cell.content -}}
+    </div>
+  {% endfor %}
+</div>

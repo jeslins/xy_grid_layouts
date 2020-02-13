@@ -3,7 +3,8 @@ xy-grid-12:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-12'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/12.png'
+  icon_map:
+    - [main]
   regions:
     main:
       label: 'Main content'
@@ -12,7 +13,8 @@ xy-grid-1-11:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-1-11'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/1-11.png'
+  icon_map:
+    - [sidebar_left, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -23,7 +25,8 @@ xy-grid-2-10:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-2-10'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/2-10.png'
+  icon_map:
+    - [sidebar_left, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -34,7 +37,8 @@ xy-grid-3-9:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-3-9'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/3-9.png'
+  icon_map:
+    - [sidebar_left, sidebar_right, sidebar_right, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -45,7 +49,8 @@ xy-grid-4-8:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-4-8'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/4-8.png'
+  icon_map:
+    - [sidebar_left, sidebar_right, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -56,7 +61,8 @@ xy-grid-5-7:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-5-7'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/5-7.png'
+  icon_map:
+    - [sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -67,7 +73,8 @@ xy-grid-6-6:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-6-6'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/6-6.png'
+  icon_map:
+    - [sidebar_left, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -78,7 +85,8 @@ xy-grid-7-5:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-7-5'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/7-5.png'
+  icon_map:
+    - [sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_right, sidebar_right, sidebar_right, sidebar_right, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -89,7 +97,8 @@ xy-grid-8-4:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-8-4'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/8-4.png'
+  icon_map:
+    - [sidebar_left, sidebar_left, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -100,7 +109,8 @@ xy-grid-9-3:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-9-3'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/9-3.png'
+  icon_map:
+    - [sidebar_left, sidebar_left, sidebar_left, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -111,7 +121,8 @@ xy-grid-10-2:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-10-2'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/10-2.png'
+  icon_map:
+    - [sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -122,7 +133,8 @@ xy-grid-11-1:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-11-1'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/11-1.png'
+  icon_map:
+    - [sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -133,7 +145,8 @@ xy-grid-2-8-2:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-2-8-2'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/2-8-2.png'
+  icon_map:
+    - [sidebar_left, main, main, main, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -146,7 +159,8 @@ xy-grid-3-6-3:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-3-6-3'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/3-6-3.png'
+  icon_map:
+    - [sidebar_left, main, main, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -175,7 +189,8 @@ xy-grid-4-4-4:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-4-4-4'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/4-4-4.png'
+  icon_map:
+    - [sidebar_left, main, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'
@@ -188,7 +203,8 @@ xy-grid-5-5-2:
   category: 'XY Grid Layouts'
   template: 'templates/xy-grid-5-5-2'
   class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
-  icon: 'images/5-5-2.png'
+  icon_map:
+    - [sidebar_left, sidebar_left, sidebar_left, sidebar_left, sidebar_left,  main, main, main, main, main, sidebar_right, sidebar_right]
   regions:
     sidebar_left:
       label: 'Sidebar Left'

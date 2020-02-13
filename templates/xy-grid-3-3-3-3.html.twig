@@ -1,0 +1,29 @@
+{% extends '@xy_grid_layouts/xy-grid-wrapper.html.twig' %}
+
+{% set breakpoint_two_col = '' %}
+{% if settings.breakpoint == 'large' %}
+  {% set breakpoint_two_col = 'medium-6' %}
+{% endif %}
+
+{% block grid %}
+  {% if content.column_one %}
+    <{{ settings.wrappers.column_one }} {{ region_attributes.column_one.addClass('cell', settings.breakpoint ~ '-3', breakpoint_two_col) }}>
+    {{ content.column_one }}
+    </{{ settings.wrappers.column_one }}>
+  {% endif %}
+  {% if content.column_two %}
+    <{{ settings.wrappers.column_two }} {{ region_attributes.column_two.addClass('cell', settings.breakpoint ~ '-3', breakpoint_two_col) }}>
+    {{ content.column_two }}
+    </{{ settings.wrappers.column_two }}>
+  {% endif %}
+  {% if content.column_three %}
+    <{{ settings.wrappers.column_three }} {{ region_attributes.column_three.addClass('cell', settings.breakpoint ~ '-3', breakpoint_two_col) }}>
+    {{ content.column_three }}
+    </{{ settings.wrappers.column_three }}>
+  {% endif %}
+  {% if content.column_four %}
+    <{{ settings.wrappers.column_four }} {{ region_attributes.column_four.addClass('cell', settings.breakpoint ~ '-3', breakpoint_two_col) }}>
+    {{ content.column_four }}
+    </{{ settings.wrappers.column_four }}>
+  {% endif %}
+{% endblock %}

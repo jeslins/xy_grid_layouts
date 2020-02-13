@@ -154,6 +154,22 @@ xy-grid-3-6-3:
       label: 'Main content'
     sidebar_right:
       label: 'Sidebar Right'
+xy-grid-3-3-3-3:
+  label: 'XY Grid Four Column: 3-3-3-3'
+  category: 'XY Grid Layouts'
+  template: 'templates/xy-grid-3-3-3-3'
+  class: '\Drupal\xy_grid_layouts\Plugin\Layout\XyGridLayouts'
+  icon_map:
+    - [column_one, column_two, column_three, column_four]
+  regions:
+    column_one:
+      label: 'Column One'
+    column_two:
+      label: 'Column Two'
+    column_three:
+      label: 'Column Three'
+    column_four:
+      label: 'Column Four'
 xy-grid-4-4-4:
   label: 'XY Grid Three Column: 4-4-4'
   category: 'XY Grid Layouts'

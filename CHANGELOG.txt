@@ -1,3 +1,8 @@
+ Journal 8.x-2.x-beta3, 2020-02-13
+----------------------------------
+#3113399 by itothegore: Generate icons with icon_map
+#3111832 by maskedjellybean, pramann: Four column layout
+
  Journal 8.x-2.x-beta1, 2019-12-02
 ----------------------------------
 #3096927 by maskedjellybean, itothegore: Form field to set grid gutters

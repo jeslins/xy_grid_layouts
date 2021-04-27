@@ -1,0 +1,15 @@
+{
+    "name": "jeslins/xy_grid_layouts",
+    "type": "drupal-module",
+    "description": "Provides ZURB Foundation XY grid system layouts.",
+    "keywords": ["Drupal"],
+    "homepage": "https://github.com/jeslins/xy_grid_layouts",
+    "license": "GPLv3",
+    "minimum-stability": "dev",
+    "extra": {
+      "branch-alias": {
+        "8.x-2.x": "2.x-dev"
+      }
+    }
+  }
+  
